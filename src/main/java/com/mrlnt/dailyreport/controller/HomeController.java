@@ -10,11 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HomeController {
     @GetMapping("/")
     public String home(){
-        return "index";
-    }
-    @PostMapping("/submit")
-    public String submitForm(@RequestParam("username") String username, Model model){
-        model.addAttribute("username", username);
-        return "result";
+        return "upload";
     }
 }
